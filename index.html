@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="autor" content="Lucas D. Minatto">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Game Form</title>
+    
+  </head>
+  <body>
+    <h1 id="title">My Game List</h1>
+    <p id="description">My favorites games</p>
+    <form id="survey-form">
+    <fieldset>
+        <legend>Enter your informations</legend>
+        <label id="name-label">Enter your full name:<input id="name" type="text" required placeholder="Name"></label>
+        <label id="email-label">Enter your e-mail:<input id="email" type="email" required placeholder="mygame@gmail.com"></label>
+        <label id="number-label">Enter how many games do you play:<input id="number" type="number" min="1" max="99" required placeholder="1"></label>
+    </fieldset>
+    <fieldset>
+      <legend>Where do you play the most?</legend>
+      <select id="dropdown">
+        <option value="">Select one</option>
+        <option value="1" id="console">Console</option>
+        <option value="2" id="cellphone">Cellphone</option>
+        <option value="3" id="computer">Computer</option>
+        </select>
+    </fieldset>
+    <fieldset>
+      <legend>What's your favorite type of game</legend>
+      <label for="moba"><input id="moba" type="radio" value="4" name="game">MOBA</label>
+      <label for="fps"><input id="fps" type="radio" value="5" name="game">FPS</label>
+      <label for="mmo"><input id="mmo" type="radio" value="6" name="game">MMO</label>
+      <label for="rpg"><input id="rpg" type="radio" value="7" name="game">RPG</label>
+      <label for="other"><input id="other" type="radio" value="8" name="game">Other</label>
+    </fieldset>
+    <fieldset>
+      <legend>Which plataform do you use?</legend>
+      <label for="psn"><input id="psn" value="9" type="checkbox">PSN</label>
+      <label for="xboxlive"><input id="xboxlive" value="10" type="checkbox">Xbox Live</label> 
+      <label for="steam"><input id="steam" value="11" type="checkbox">Steam</label>
+      <label for="othres"><input id="othres" value="12" type="checkbox">Others</label>
+      </fieldset>
+      <fieldset>
+        <legend>Describe about your favorite game</legend>
+        <label for="describe"> <textarea id="describe" cols="40" rows="4" placeholder="My favorite game is..."></textarea></label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
